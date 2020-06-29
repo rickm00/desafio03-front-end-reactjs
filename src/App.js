@@ -43,7 +43,7 @@ function App() {
     <div>
       <ul data-testid="repository-list">
       {repositories.map((repository) => ( //.map percorre o repositório e retorna algo
-          <li key={repository.id}>
+          <li key={repository.id}> //Seta o id único do repositório
             {repository.title}
 
           <button onClick={() => handleRemoveRepository(repository.id)}>
